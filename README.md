@@ -110,7 +110,8 @@ The team agreed on guidelines to follow during development. The technologies and
  
 ## **Live Website** :tv: <span id="live"></span>
 
-You can check the website [**Here**](https://gsg-cf05.github.io/CryptocurrencySite/).
+You can check the website [**Here**](https://ferasomar2.github.io/crypto-website/).
+
 
 ## Running the project locally :hotel: <span id="usage"></span>
 
