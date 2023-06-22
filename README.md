@@ -120,12 +120,3 @@ You can check the website [**Here**](https://gsg-cf05.github.io/CryptocurrencySi
 - code .
 ```
 
-## ♢ Mentor:
-The great mentor![Husam](https://github.com/husamkamal)!.
-
-## **Team Members** :raising_hand: <span id="team"></span>
-
-- [Aya Enshasy](https://github.com/ayaenshasy2002)
-- [Mai Elhajeen](https://github.com/Mai-Elhajeen)
-- [Omar AbuRabie](https://github.com/omaraburabie3)
-- [Ali Shbair](https://github.com/ShbairAli)
