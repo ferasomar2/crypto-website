@@ -1,0 +1,25 @@
+/* font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --title-font-size: 48px;
+        --subtitle-font-size: 16px;
+        --text-font-size: 22px;
+    }
+}
+
+/* ============================ nav ============================ */
+@media screen and (max-width: 767px) {
+    .nav-menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: all .3s;
+    }
+}
+
+

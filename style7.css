@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+img {
+  width: 40%;
+  margin-left: 7rem;
+} 
+  form.sign-up-form {
+  
+    z-index: 1;
+  }
+  form.sign-in-form {
+    z-index: 2;
+  }
+  
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-box {
+    padding: 0px 70px;
+    text-align: center;
+  }
+
+.container .login-text {
+    font-size: 3.2rem;
+    color:black;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+h1.login-text {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.container .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
+}
+
+.container .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+
+
+.container .login-email .input-group {
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 34px 0px;
+    height: 69px;
+    border-radius: 55px;
+    display: flex;
+    padding: 9px 0.4rem;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+.container .login-email .input-group input {
+    width: 91%;
+    height: 123%;
+    margin-left: 18px;
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1rem;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    border-radius: inherit;
+    border-radius: 10rem;
+}
+.input-group input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}
+
+  .input-group input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+
+.container .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn{
+    width: 170px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 58px;
+    border-radius: 49px;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text {
+  color: black;
+  font-weight: 600;
+  margin: 2rem;
+}
+.login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+  
+  .textt {
+    background-color: #f0f0f0;
+  }
+  social-text {
+    padding: 1.7rem 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: currentcolor;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+  
+  .social-icon:hover {
+    color: #4481eb;
+    border-color: #4481eb;
+  }
+
+
+  .input-group i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    background: fixed;
+  }
+  .input-group input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+
+  @media screen and (min-width: 1024px) { 
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.2s 0.7s;
+        overflow: hidden;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-left: 46rem;
+        margin-top: 1rem;
+
+    }
+    .container {
+        width: 100%;
+        background-image:none;
+    }
+    .images {
+      width: 47%;
+      margin-left: -12rem;
+  }
+.login-register-text {
+  color: black;
+  font-weight: 600;
+
+}
+.container .login-email .input-group {
+  width: 100%;
+  /* background-color: #f0f0f0;
+  margin: 34px 0px;
+  height: 60%;
+  border-radius: 55px;
+  display: flex;
+  padding: 1rem  0.4rem;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center; */
+}
+.image-containar {
+  flex-basis: 50%;
+  margin-top: -48rem;
+  margin-right: 29rem;
+}
+.container .login-text {
+  font-size: 3.2rem;
+  color: black;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.social-icon {
+
+  color: darkslategrey;
+
+}
+
+img {
+  width: 75%;
+} 
+
+  }

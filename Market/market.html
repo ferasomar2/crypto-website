@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- start html page -->
+  <head>
+    <!-- start head page -->
+    <!-- ============================ meta tags ============================ -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="website to display cryptocurrency data" />
+    <meta name="keywords" content="cryptocurrency currency crypto" />
+    <meta name="author"  />
+    <meta http-equiv="refresh" content=" " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================ other links ============================ -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- icons css -->
+
+    <!-- ============================ css links ============================ -->
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./market.css" />
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ============================ title ============================ -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/logo-light.png"
+      data-n-head="ssr"
+    />
+    <title>Cryptocurrency | Market</title>
+  </head>
+  <!-- end head page -->
+  <body>
+    <!-- start body page -->
+    <!-- ============================ loading page ============================ -->
+    <div class="preloader">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+    </div>
+
+    <!-- ============================ header ============================ -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo"
+          ><img src="../images/logo-light.png" alt=""
+        /></a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link active-link">
+                <i class="uil uil-estate nav-icon"></i>Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../About/about.html" class="nav-link">
+                <i class="uil uil-user nav-icon"></i>About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../Market/market.html" class="nav-link">
+                <i class="uil uil-chart-bar nav-icon"></i>Market
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../Contact Us/contact.html" class="nav-link">
+                <i class="uil uil-message nav-icon"></i>Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav-close" id="nav-close"></i>
+        </div>
+
+        <div class="nav-btn">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="head-page">
+        <p class="marketSummary">Market Summary</p>
+        <div class="div-img" id="search-analysis">
+          <img src="../images/analysis.svg" alt="" />
+        </div>
+        <ul class="list" id="list">
+          <!-- <p class="title-list">cryptocurrency</p>
+          <li>
+            <img src="../images/volume-control.png" alt="" />
+            <span>volume</span>
+          </li>
+          <li>
+            <img src="../images/volume-control.png" alt="" />
+            <span>volume</span>
+          </li>
+          <li>
+            <img src="../images/volume-control.png" alt="" />
+            <span>volume</span>
+          </li>
+          <li>
+            <img src="../images/volume-control.png" alt="" />
+            <span>volume</span>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="change-percent">
+        <div class="top-gainers">
+          <!-- <div class="gainers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="gainers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="gainers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="gainers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="gainers-coin">
+            <p>coin</p>
+            <span>coin</span> -->
+        </div>
+
+        <div class="top-losers">
+          <!-- <div class="losers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="losers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="losers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="losers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+          <div class="losers-coin">
+            <p>coin</p>
+            <span>coin</span>
+          </div>
+        </div> -->
+        </div>
+      </div>
+
+      <div class="div-search">
+        <i class="uil uil-search btnSearch"></i>
+        <input
+          id="search"
+          type="text"
+          placeholder="Enter the symbol "
+          autocomplete="on"
+        />
+        <i class="ri-close-line hideIcon"></i>
+      </div>
+
+      <!-- <div class="div-title">
+            <div class="section-title">Cryptocurrency Table</div>
+            <div class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting</div>
+        </div>  -->
+      <div class="boxes">
+        <!-- <div class="box">
+                <div class="head-box">
+                    <div class="img-title">
+                        <div class="div-img">
+                            <img src="../images/bitcoinImg.jpg" alt="">
+                        </div>
+                        <p class="name">Bitcoin<span>BTC</span></p>
+                    </div>
+                    <p class="percent-change-coin">2 <span>BTC</span></p>
+                </div>
+                <div class="content-box">
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="head-box">
+                    <div class="img-title">
+                        <div class="div-img">
+                            <img src="../images/bitcoinImg.jpg" alt="">
+                        </div>
+                        <p class="name">Bitcoin<span>BTC</span></p>
+                    </div>
+                    <p class="percent-change-coin">2 <span>BTC</span></p>
+                </div>
+                <div class="content-box">
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="head-box">
+                    <div class="img-title">
+                        <div class="div-img">
+                            <img src="../images/bitcoinImg.jpg" alt="">
+                        </div>
+                        <p class="name">Bitcoin<span>BTC</span></p>
+                    </div>
+                    <p class="percent-change-coin">2 <span>BTC</span></p>
+                </div>
+                <div class="content-box">
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+
+                    <div class="coin-details">
+                        <p>+1000</p>
+                        <span>Price</span>
+                    </div>
+                </div>
+            </div> -->
+      </div>
+    </main>
+
+    <!-- ============================ footer ============================ -->
+    <footer class="footer">
+      <div class="footer-bg">
+        <div class="footer-container container grid">
+          <div class="img-logo">
+            <img src="../images/logo-light.png" alt="" />
+          </div>
+
+          <ul class="footer-links">
+            <li>
+              <a href="../About/about.html" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="../Market/market.html" class="footer-link">Market</a>
+            </li>
+
+            <li>
+              <a href="../Contact Us/contact.html" class="footer-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <p class="footer-copy">
+          &#169;2022 coding with ♥ by feras omar right reserved
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="uil uil-arrow-up scroll-up-icon"></i>
+    </a>
+
+    <!-- ============================ JS links ============================ -->
+    <script src="../js/main.js"></script>
+    <script src="../js/dark.js"></script>
+    <script src="./market.js"></script>
+   
+  </body>
+  <!-- end body page -->
+</html>
+<!-- end html page -->
